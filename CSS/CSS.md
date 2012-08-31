@@ -29,24 +29,27 @@ then it won't interfer with the existing rules (so long as it's not named
 IDs or Classes
 --------------------------------------------------------------------------------
 
-There's it nothing wrong with using IDs per-say, but if you want to change the
-value of a class later in the code then you have to call it via the ID again.
+There is alot of talk if IDs are a good thing to use or not. Taking all the
+points into account, I cannot say for sure to if IDs should be used or not in
+this case of standarisation. Your best bet is to use your professional judgement
+whether or not a case requires an ID or not.
 
-    #parent .child {}
-    .child {}               /* #parent ignores .child */
+My personal prefences they are good to use for a high-level of design. So I
+always use IDs for the main site header and footer - `#header` and `#footer`
+respectively. The reason for these is there won't be a case where these are
+repeated on the page, ever, so I can safetly refer to these via IDs as apposed
+to their element (`header`/`footer`) or a class (`.header`/`.footer`). There
+are also cases within the document where you could use IDs; these are typically
+parts of the page that you know will never be repeated on the page. These
+should only be applied to the direct children of the main section, or just
+outside.
 
-So to combat this is to use classes through out the code; this means that you
-can change that value later in the code.
+This is only a guide though so do use your best judgement keeping in mind
+issues with specificity (check out [CSS Specificity][1] by Vitaly Friedman to
+understand them better) and also keeping the IDs unique. Also worth mentioning
+that IDs are very handy when it comes to JavaScript and link achoring in HTML,
+so could be worth concidering these aspects when deciding on what to use.
 
-    .parent .child {}
-    .child {}               /* .parent obeys .child */
-
-It's best to use IDs in specific cases where you know that contained element
-won't need to be used again in the same doc. It's also a good idea to think of 
-IDs for high-up elements such as major layout points or apart of a Javascript
-implimentation.
-
-[View the code example](http://codepen.io/anon/pen/nvAIJ)
 
 
 Format of Code
@@ -210,3 +213,7 @@ References
 * [Improving Code Readability with CSS Styleguides](http://coding.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/)
 * [ThinkUp Code Style Guide: CSS](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide:-CSS)
 * [WordPress CSS Coding Standard](http://make.wordpress.org/core/handbook/coding-standards/css/)
+
+
+
+[1]: http://coding.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/
