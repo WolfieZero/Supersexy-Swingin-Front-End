@@ -46,9 +46,16 @@ outside.
 
 This is only a guide though so do use your best judgement keeping in mind
 issues with specificity (check out [CSS Specificity][1] by Vitaly Friedman to
-understand them better) and also keeping the IDs unique. Also worth mentioning
-that IDs are very handy when it comes to JavaScript and link achoring in HTML,
-so could be worth concidering these aspects when deciding on what to use.
+understand them better) and also keeping the IDs unique. A good quote from the
+[WordPress CSS Coding Standard][2] says:
+
+> Broad selectors allow us to be efficient, yet can have adverse consequences if
+  not tested. Location-specific selectors can save us time, but will quickly 
+  lead to a cluttered stylesheet. Exercise your best judgement.
+
+It's also worth mentioning that IDs are very handy when it comes to JavaScript
+and link achoring in HTML, so could be worth concidering these aspects when
+deciding on what to use.
 
 
 
@@ -70,9 +77,12 @@ rule group. There should also be a space between the end of the attribute call
 and the start of the group (`{}`)
 
     .content img {}         /* good */
+
     p,
     h3 {}                   /* good */
+
     h4, h5 {}               /* bad! */
+    
     h6{}                    /* bad! */
    
 Tabbing shouldn't be used but fixed number of spaces for indendation (4 is a
@@ -182,15 +192,6 @@ the code.
 Both Groups and Sepecifics can be nested to provider deeper documentation
 
 
-
-Thoughts
---------------------------------------------------------------------------------
-
-> Broad selectors allow us to be efficient, yet can have adverse consequences if
-  not tested. Location-specific selectors can save us time, but will quickly 
-  lead to a cluttered stylesheet. Exercise your best judgement.
-
-
 Terms
 --------------------------------------------------------------------------------
 
@@ -212,8 +213,9 @@ References
 * [My HTML/CSS coding style](http://csswizardry.com/2012/04/my-html-css-coding-style/)
 * [Improving Code Readability with CSS Styleguides](http://coding.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/)
 * [ThinkUp Code Style Guide: CSS](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide:-CSS)
-* [WordPress CSS Coding Standard](http://make.wordpress.org/core/handbook/coding-standards/css/)
+* [WordPress CSS Coding Standard][2]
 
 
 
 [1]: http://coding.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/
+[2]: http://make.wordpress.org/core/handbook/coding-standards/css/
