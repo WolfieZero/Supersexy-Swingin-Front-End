@@ -44,6 +44,9 @@ parts of the page that you know will never be repeated on the page. These
 should only be applied to the direct children of the main section, or just
 outside.
 
+Saying that, I've started to use `.site-header` incase the need of a style
+overwrite is required and there haven't been any inherant issues.
+
 This is only a guide though so do use your best judgement keeping in mind
 issues with specificity (check out [CSS Specificity][1] by Vitaly Friedman to
 understand them better) and also keeping the IDs unique. A good quote from the
@@ -57,6 +60,12 @@ It's also worth mentioning that IDs are very handy when it comes to JavaScript
 and link achoring in HTML, so could be worth concidering these aspects when
 deciding on what to use.
 
+Best bet is to read through and discover yourself, just keep in mind what maybe
+required in the future of a style change on the site and also what requirements
+you need in your styling.
+
+(A duff response, I know, but what are you going to do when you have [comments
+like this](http://www.zeldman.com/2012/11/21/in-defense-of-descendant-selectors-and-id-elements/#comment-64186))
 
 
 Format of Code
@@ -214,6 +223,8 @@ References
 * [Improving Code Readability with CSS Styleguides](http://coding.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/)
 * [ThinkUp Code Style Guide: CSS](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide:-CSS)
 * [WordPress CSS Coding Standard][2]
+* [IDs Will Not Make Your Documents More Semantic](http://www.impressivewebs.com/ids-not-make-documents-semantic/)
+* [Comment from Jeffrey Zeldman](http://www.zeldman.com/2012/11/21/in-defense-of-descendant-selectors-and-id-elements/#comment-64186)
 
 
 
