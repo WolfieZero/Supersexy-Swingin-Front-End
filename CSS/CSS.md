@@ -225,6 +225,7 @@ References
 * [WordPress CSS Coding Standard][2]
 * [IDs Will Not Make Your Documents More Semantic](http://www.impressivewebs.com/ids-not-make-documents-semantic/)
 * [Comment from Jeffrey Zeldman](http://www.zeldman.com/2012/11/21/in-defense-of-descendant-selectors-and-id-elements/#comment-64186)
+* [Code smells in CSS](http://csswizardry.com/2012/11/code-smells-in-css/)
 
 
 
